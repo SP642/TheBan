@@ -8,7 +8,7 @@
 <meta name="robots" content="">
 <meta charset="ISO-8859-1"> 
 <meta charset="UTF-8"> 
-<title>The Ban - The world's Most Luxurious Banana</title>
+<title>The Ban</title>
 <style>
 .TOPBAR {
 font-family:"Franklin Gothic Medium";
@@ -19,7 +19,7 @@ font-family:"Franklin Gothic Medium";
   position: fixed;
   top: -18px;
   left: 0px;
-  box-shadow: 0px 0px 3vw #000000;
+  box-shadow: 0px 0px 0vw #000000;
 }
 
 	.TOPBARLINK {
@@ -47,6 +47,23 @@ font-family:"Franklin Gothic Medium";
 				border-top: 0.4vw solid #FFFFFF;
 
       }
+	  .TOPBARLINKselect {
+	  height:96px;
+	  color: #FFFFFF;
+	  background-color:#4CBF4A;
+	  font-size: 0.9vw;
+	  		  font-weight:bold;
+
+	  border-width: 0.3vw;
+	  border-style:inherit;
+	  border-color:#FFFFFF;
+    text-decoration: none;
+    vertical-align:top;
+			        border-bottom: 0.4vw solid #FFFFFF;
+				border-top: 0.4vw solid #FFFFFF;
+
+	
+	}
 
 .BOTTOMBAR {
 	height: 9px;
@@ -85,15 +102,6 @@ width:55%;
 border:none;
 }
 
-.BOTTOMBAR {
-	height: 9px;
-  width: 100%;
-  background-color: #4CBF4A;
-  position: ;
-  bottom: 0px;
-  right: 0px
-}
-
 .PAGE {
 font-family:"Franklin Gothic Medium";
 	}
@@ -120,7 +128,7 @@ body,td,th {
         padding: 0;
         width: 90%;
       }
-	  
+
 .style4 {color: #FFFFFF;
 font-size: 0.8vw;
 text-decoration:none;}
@@ -143,6 +151,7 @@ font-size: 1.2vw;}
 
 .style6 {color: #4CBF4A; font-weight: bold; font-size:1vw; }
 .style7 {color: #FFFFFF; font-weight: bold; font-size:1vw; }
+
 
 
 .BUTTONONGREENVERTICALBORDER {
@@ -326,9 +335,8 @@ border-width: 0.3vw;
 
 .imgart:hover {
 border:groove #FFFFFF;
-  animation: shake 1.5s;
-  transform: scale(1.7, 1.7);
 }
+
 
 .badgepl {
 position:absolute
@@ -341,8 +349,7 @@ padding: 0.15vw 0.15vw;
 text-align: center;
 border-radius: 0.1vw;
 }
-	
-	
+
 .bfadsokg {
   font-family: Corbel;
 	font-size: 1vw;
@@ -390,6 +397,75 @@ border-radius: 0.1vw;
         text-shadow: 0px 0px 0.3vw #ffffff;
       }
 
+
+
+            .marquee {
+			width: 100%;
+			text-decoration:none;
+                height: 2vw;
+                overflow: hidden;
+                position: relative;
+                background: #4CBF4A;
+                color: #FFFFFF;
+                border-top: 0.2vw solid #ffffff;
+				 border-bottom: 0.2vw solid #ffffff;
+            }
+            
+            .marquee p {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                line-height: 2vw;
+                text-align: center;
+				text-decoration:none;
+				vertical-align:middle;
+                -moz-transform: translateX(100%);
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+                -moz-animation: scroll-left 2s linear infinite;
+                -webkit-animation: scroll-left 2s linear infinite;
+                animation: scroll-left 31s linear infinite;
+            }
+			.marquee p:hover {
+                
+
+             -moz-animation-play-state: paused;
+-webkit-animation-play-state: paused;
+animation-play-state: paused;
+               
+            }
+            
+            @-moz-keyframes scroll-left {
+                0% {
+                    -moz-transform: translateX(100%);
+                }
+                100% {
+                    -moz-transform: translateX(-100%);
+                }
+            }
+            
+            @-webkit-keyframes scroll-left {
+                0% {
+                    -webkit-transform: translateX(100%);
+                }
+                100% {
+                    -webkit-transform: translateX(-100%);
+                }
+            }
+            
+            @keyframes scroll-left {
+                0% {
+                    -moz-transform: translateX(100%);
+                    -webkit-transform: translateX(100%);
+                    transform: translateX(100%);
+                }
+                100% {
+                    -moz-transform: translateX(-100%);
+                    -webkit-transform: translateX(-100%);
+                    transform: translateX(-100%);
+                }
+            }
 			
 ::-webkit-scrollbar {
   width: 0.8vw;
@@ -421,9 +497,10 @@ border-radius: 0.1vw;
 <p class="PAGE">
 
 <!-- hidden element for spacing (TOPBAR on it) -->
+<!-- hidden element for spacing (TOPBAR on it) -->
 <table width="60%%" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td width="20%"><div align="center"><a href="./index.html"><img src="img/theban.jpg" alt="The Ban" width="75%" border="0"></a></div></td>
+    <td width="20%"><div align="center"><a href="./index.html"><img src="img/theban.jpg" alt="The Ban" width="60%" border="0"></a></div></td>
     <td></td>
     <td></td>
     <td></td>
@@ -431,14 +508,11 @@ border-radius: 0.1vw;
     <td></td>
   </tr>
 </table>
-<!-- hidden element for spacing (TOPBAR on it) -->
-
-
-
+<br>
 <p class="GREEN">
 <table width="100%" border="0" align="center" cellpadding="5" cellspacing="5" bgcolor="#4CBF4A">
   <tr>
-    <td width="20%"><table width="100%%" border="0" cellpadding="5" cellspacing="5" class="style4">
+    <td width="20%" rowspan="3"><table width="100%%" border="0" cellpadding="5" cellspacing="5" class="style4">
       <tr>
         <td class="style4">
 		<button class="bfadsokg"><p id = "rotator1_div" class="bfadsokg"></p></button>        
@@ -446,134 +520,39 @@ border-radius: 0.1vw;
         <td width="40%">&nbsp;</td>
       </tr>
     </table></td>
-    <td>
+    <td colspan="2" rowspan="3" valign="top">
+	<a href="./article.html">
+	<button class="BUTTONONGREENVERTICALBORDER" style="width:100%"><p>    
 	<p>
-	<table width="100%%" border="0" cellspacing="5" cellpadding="5">
+    <table width="100%%" border="0" cellspacing="5" cellpadding="5">
       <tr>
-        <td><h1 class="style4BIGa">The World's Most Luxurious Banana </h1>
-		  <p><span class="badgepl">LIFESTYLE</span><span class="style4"> | </span><em class="style4a">by SizzlingPotassium642 </em>	      </p>
-		  <p>&nbsp;</p></td>
+        <td><img src="https://cdn.pixabay.com/photo/2016/08/30/15/27/rolls-royce-1631074_960_720.jpg" alt="The World's Most Luxurious Banana" width="100%" border="0" class="imgart"></td>
         </tr>
       <tr>
-        <td><table width="96%%" border="0" cellspacing="5" cellpadding="5">
-          <tr>
-            <td colspan="2"><blockquote>
-              <p class="style4a">A yellow dream on four wheels, this is the yellow <strong>Rolls-Royce Phantom</strong> we&rsquo;ve chosen to write about.<br>
-                Starting from 1925, a history of almost a century from the first Phantom I, also known as 40/50 Phantom and successor of 40/50, the famous <strong>Silver Ghost</strong>.<br>
-                <br>
-                The Rolls-Royce Phantom is not a just a car it's a  <strong>full-sized luxury saloon car</strong> launched in   2003. <br>
-                The body is mostly aluminium, extrusions that are used to construct the aluminium spaceframe are produced in Norway using hydroelectric power, shaped and machined in Denmark and finally hand-welded in Germany. <br>
-                Thanks to this piece of engineering, a <strong>boundless set of gadgets and comfort</strong> has been developed and they are today more accessible on various common car models.</p>
-            </blockquote>              <p class="style4">&nbsp;</p></td>
-            <td><p><img src="https://cdn.pixabay.com/photo/2016/08/30/15/27/rolls-royce-1631074_960_720.jpg" alt="The World's Most Luxurious Banana" width="100%" class="imgart"></p>
-              <p>&nbsp;</p></td>
-          </tr>
-          <tr>
-            <td><p><img class="imgart" src="https://c.pxhere.com/photos/07/1d/rollsroyce_beverly_hills_rich_wealthy_car_beverly_hills_expensive-563539.jpg!d" alt="The World's Most Luxurious Banana" width="100%"></p>
-              <p>&nbsp;</p></td>
-            <td colspan="2" class="style4a"><blockquote>
-              <p>The luxurious frivolities vary over time from a navigation system with voice recognition, power sunroof, upgraded leather upholstery, rear-view camera, rear-seat DVD entertainment system, continuing to 15-speaker Lexicon Logic7 premium sound system, 8-disc CD changer, 18-way power front seats, 16-way power rear seats, heated and cooled cup holders, rear-seat tables, universal garage door opener, until you get to power tilt/telescopic heated wood and leather-wrapped steering wheel with radio, climate, and navigation controls, power open/close boot lid, power closing doors, wireless headphones, iPod adapter, refrigerator, and air conditioning with 5-zone climate controls. <br>
-                <br>
-                Were you wondering? Yes, it also has an engine. Take a look at tables below.<br>
-                <strong>How much is a car like that worth to you and what don&rsquo;t you like?</strong></p>
-            </blockquote>              <p>&nbsp;</p></td>
-            </tr>
-          <tr>
-            <td colspan="2"><table border="1" cellpadding="0" cellspacing="0" bordercolor="#333333" class="style4l">
-              <thead>
-                <tr>
-                  <th tabindex="0" role="columnheader button" title="Sort descending">Model</th>
-                  <th tabindex="0" role="columnheader button" title="Sort ascending">YEARS</th>
-                  <th tabindex="0" role="columnheader button" title="Sort ascending">Type/code</th>
-                  <th tabindex="0" role="columnheader button" title="Sort ascending">Power@rpm, Torque@rpm</th>
-                  <th tabindex="0" role="columnheader button" title="Sort ascending">CO2 emission (g/km) </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Coup&eacute;</td>
-                  <td>2008&ndash;2017</td>
-                  <td>6,749&nbsp;cc (411.8&nbsp;cu&nbsp;in) V12 (<a href="https://en.wikipedia.org/wiki/BMW_N73" title="BMW N73">N73B68</a>)</td>
-                  <td>460&nbsp;PS (338&nbsp;kW; 454&nbsp;hp)@5350, 720&nbsp;N&sdot;m (531&nbsp;lb&sdot;ft)@3500</td>
-                  <td>355 </td>
-                </tr>
-                <tr>
-                  <td>Drophead Coup&eacute;</td>
-                  <td>2007&ndash;2017</td>
-                  <td>6,749&nbsp;cc (411.8&nbsp;cu&nbsp;in) V12 (<a href="https://en.wikipedia.org/wiki/BMW_N73" title="BMW N73">N73B68</a>)</td>
-                  <td>460&nbsp;PS (338&nbsp;kW; 454&nbsp;hp)@5350, 720&nbsp;N&sdot;m (531&nbsp;lb&sdot;ft)@3500</td>
-                  <td>355 </td>
-                </tr>
-                <tr>
-                  <td>Phantom</td>
-                  <td>2003&ndash;2017</td>
-                  <td>6,749&nbsp;cc (411.8&nbsp;cu&nbsp;in) V12 (<a href="https://en.wikipedia.org/wiki/BMW_N73" title="BMW N73">N73B68</a>)</td>
-                  <td>460&nbsp;PS (338&nbsp;kW; 454&nbsp;hp)@5350, 720&nbsp;N&sdot;m (531&nbsp;lb&sdot;ft)@3500</td>
-                  <td>355 </td>
-                </tr>
-                <tr>
-                  <td>Phantom Extended Wheelbase</td>
-                  <td>2005&ndash;2017</td>
-                  <td>6,749&nbsp;cc (411.8&nbsp;cu&nbsp;in) V12 (<a href="https://en.wikipedia.org/wiki/BMW_N73" title="BMW N73">N73B68</a>)</td>
-                  <td>460&nbsp;PS (338&nbsp;kW; 454&nbsp;hp)@5350, 720&nbsp;N&sdot;m (531&nbsp;lb&sdot;ft)@3500</td>
-                  <td>355 </td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-              <table border="1" cellpadding="0" cellspacing="0" bordercolor="#333333" class="style4l">
-                <thead>
-                  <tr>
-                    <th tabindex="0" role="columnheader button" title="Sort ascending">Model</th>
-                    <th tabindex="0" role="columnheader button" title="Sort ascending">Years</th>
-                    <th tabindex="0" role="columnheader button" title="Sort ascending">Type/code</th>
-                    <th tabindex="0" role="columnheader button" title="Sort ascending">Power@rpm, Torque@rpm</th>
-                    <th tabindex="0" role="columnheader button" title="Sort ascending">CO2 emission (g/km) </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Phantom</td>
-                    <td>2012&ndash;</td>
-                    <td>6,749&nbsp;cc (411.8&nbsp;cu&nbsp;in) V12 (<a href="https://en.wikipedia.org/wiki/BMW_N73" title="BMW N73">N73B67</a>)</td>
-                    <td>460&nbsp;PS (338&nbsp;kW; 454&nbsp;hp)@5350, 720&nbsp;N&sdot;m (531&nbsp;lb&sdot;ft)@3500</td>
-                    <td>343 </td>
-                  </tr>
-                  <tr>
-                    <td>Phantom Extended Wheelbase</td>
-                    <td>2012&ndash;</td>
-                    <td>6,749&nbsp;cc (411.8&nbsp;cu&nbsp;in) V12 (<a href="https://en.wikipedia.org/wiki/BMW_N73" title="BMW N73">N73B67</a>)</td>
-                    <td>460&nbsp;PS (338&nbsp;kW; 454&nbsp;hp)@5350, 720&nbsp;N&sdot;m (531&nbsp;lb&sdot;ft)@3500</td>
-                    <td>343 </td>
-                  </tr>
-                  <tr>
-                    <td>Drophead Coup&eacute;</td>
-                    <td>2012&ndash;2016</td>
-                    <td>6,749&nbsp;cc (411.8&nbsp;cu&nbsp;in) V12 (<a href="https://en.wikipedia.org/wiki/BMW_N73" title="BMW N73">N73B67</a>)</td>
-                    <td>460&nbsp;PS (338&nbsp;kW; 454&nbsp;hp)@5350, 720&nbsp;N&sdot;m (531&nbsp;lb&sdot;ft)@3500</td>
-                    <td>343 </td>
-                  </tr>
-                  <tr>
-                    <td>Coup&eacute;</td>
-                    <td>2012&ndash;2017</td>
-                    <td>6,749&nbsp;cc (411.8&nbsp;cu&nbsp;in) V12 (<a href="https://en.wikipedia.org/wiki/BMW_N73" title="BMW N73">N73B67</a>)</td>
-                    <td>460&nbsp;PS (338&nbsp;kW; 454&nbsp;hp)@5350, 720&nbsp;N&sdot;m (531&nbsp;lb&sdot;ft)@3500</td>
-                    <td>343 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <p class="style4">&nbsp;</p>
-              <p class="style4">&nbsp;</p>              </td>
-            <td><p><img class="imgart" src="https://c4.wallpaperflare.com/wallpaper/250/785/198/car-rolls-royce-phantom-drophead-wallpaper-thumb.jpg" alt="The World's Most Luxurious Banana" width="100%"></p>
-              <p>&nbsp;</p></td>
-          </tr>
-        </table>          
-          <h1 class="style4BIG">&nbsp;</h1>
-          </td>
+        <td><h1 class="style4BIG">The World's Most Luxurious Banana</h1>
+          <span class="style4BIG"><br>
+          <em>by Banano Fam </em></span></td>
         </tr>
     </table>
+	</button></a>
 	</td>
-    <td width="20%"><table width="100%%" border="0" cellpadding="5" cellspacing="5" class="style4">
+    <td width="20%" valign="top">
+		<a href="./article.html">
+
+		<button class="BUTTONONGREENHORIZONTALBORDER" style="width:100%"><p>        
+		<p>
+        <table width="100%%" border="0" cellspacing="5" cellpadding="5">
+      <tr>
+        <td width="60%"><img class="imgart" src="https://get.pxhere.com/photo/meal-food-produce-small-fresh-rack-breakfast-baking-dessert-delicious-homemade-bread-loaf-baked-three-loaves-ciabatta-cooling-individual-baked-goods-beer-bread-grass-family-pumpkin-bread-banana-bread-soda-bread-758773.jpg" alt="Air-fried Banana Bread" width="100%"></td>
+        <td><h3 class="style4">Air-fried Banana Bread</h3>
+          <span class="style4"><br>
+            <em>by Banano Fam</em></span><em> </em></td>
+      </tr>
+    </table>
+	
+	</button></a>
+	</td>
+    <td width="20%" rowspan="3"><table width="100%%" border="0" cellpadding="5" cellspacing="5" class="style4">
       <tr>
         <td width="40%" class="style4"><p class="style5">&nbsp;</p></td>
         <td>
@@ -581,15 +560,41 @@ border-radius: 0.1vw;
       </tr>
     </table></td>
   </tr>
+  <tr>
+    <td width="20%">
+		<a href="./article.html">
+
+	<button class="BUTTONONGREENHORIZONTALBORDER" style="width:100%"><p>
+	<table width="100%%" border="0" cellspacing="5" cellpadding="5">
+      <tr>
+        <td width="60%"><img class="imgart" src="https://images.pexels.com/photos/2872747/pexels-photo-2872747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Major Effects Bananas Have on Your Health" width="100%"></td>
+        <td><h3 class="style4">Major Effects Bananas Have on Your Health</h3>
+          <span class="style4"><br>
+            <em>by Banano Fam</em></span><em> </em></td>
+      </tr>
+    </table>
+	</button></a>
+	</td>
+  </tr>
+  <tr>
+    <td width="20%">
+			<a href="./article.html">
+
+	<button class="BUTTONONGREENHORIZONTALBORDER" style="width:100%"><p>
+	<table width="100%%" border="0" cellspacing="5" cellpadding="5">
+      <tr>
+        <td width="60%"><img class="imgart" src="https://c4.wallpaperflare.com/wallpaper/796/112/999/evolution-simple-che-guevara-white-background-wallpaper-preview.jpg" alt="Short History of Banana" width="100%"></td>
+        <td><h3 class="style4">Short History of Banana</h3>
+          <span class="style4"><br>
+            <em>by Banano Fam </em></span></td>
+      </tr>
+    </table>
+	</button></a>
+	</td>
+  </tr>
 </table>
 
 <p class="WHITE">
-
-<p class="GREEN">
-<p align="center" class="style4BIGa"><strong>YOU MAY ALSO LIKE
-</strong>
-<p class="style4BIG" align="center">
-
 <table width="100%" border="0" align="center" cellpadding="5" cellspacing="5" bgcolor="#FFFFFF">
   <tr>
     <td width="20%" rowspan="3"><table width="100%%" border="0" cellpadding="5" cellspacing="5" class="style5">
@@ -599,7 +604,23 @@ border-radius: 0.1vw;
         <td width="40%">&nbsp;</td>
       </tr>
     </table></td>
-    <td colspan="3"></td>
+    <td colspan="3"><div style="width:100%" align="center">
+	<a href="./article.html">
+		<button class="BUTTONONWHITEHORIZONTALBORDER" style="width:100%"><p>
+
+	<table width="100%%" border="0" cellspacing="5" cellpadding="5">
+  <tr>
+    <td width="100%"><img class="imgart" src="https://static.wixstatic.com/media/0d5298_b11f96926a754e7b8806c82fd63687b3~mv2.jpg" alt="Banano Hackathon Competition aka BOOSTER 2 " width="100%"></td>
+  </tr>
+  <tr>
+    <td width="100%"><h1 class="style5BIG">Horror stories on cryptomonKeys {Event}</h1>
+      <p class="style5BIG"><br>
+    <em>by Banano Fam </em></p></td>
+  </tr>
+</table>
+
+</button></a>
+</div></td>
     <td width="20%" rowspan="3"><table width="100%%" border="0" cellpadding="5" cellspacing="5" class="style5">
       <tr>
         <td width="40%" class="style4"><p class="style5">&nbsp;</p></td>
@@ -617,11 +638,194 @@ border-radius: 0.1vw;
   <tr>
     <td width="20%">
 	<a href="./article.html">
+	  <button class="BUTTONONWHITEVERTICALBORDER" style="width:100%"><p>
+
+	<table width="100%%" border="0" cellspacing="5" cellpadding="5">
+      <tr>
+        <td><div align="center"><img src="https://static.wixstatic.com/media/b714c2_5735e38f1d1e4b228787cdfdf486b288~mv2.png/v1/fill/w_412,h_365,fp_0.50_0.50,q_90,enc_auto/b714c2_5735e38f1d1e4b228787cdfdf486b288~mv2.webp" alt="Monkey Web Coding Challenge" width="100%" class="imgart"></div></td>
+      </tr>
+      <tr>
+        <td><h3 class="style5">Monkey Web Coding Challenge #1</h3>
+          <span class="style5"><br>
+          <em>by Banano Fam</em></span></td>
+      </tr>
+    </table>
+	<p>&nbsp;</p>
+	  </button></a>
+	</td>
+    <td width="20%">
+	<a href="./article.html">
+	  <button class="BUTTONONWHITEVERTICALBORDER" style="width:100%"><p>
+
+	<table width="100%%" border="0" cellspacing="5" cellpadding="5">
+      <tr>
+        <td><div align="center"><img src="https://static.wixstatic.com/media/b714c2_5735e38f1d1e4b228787cdfdf486b288~mv2.png/v1/fill/w_412,h_365,fp_0.50_0.50,q_90,enc_auto/b714c2_5735e38f1d1e4b228787cdfdf486b288~mv2.webp" alt="Monkey Web Coding Challenge" width="100%" class="imgart"></div></td>
+      </tr>
+      <tr>
+        <td><h3 class="style5">Monkey Web Coding Challenge #2</h3>
+          <span class="style5"><br>
+          <em>by Banano Fam</em></span></td>
+      </tr>
+    </table>
+	
+	<p>&nbsp;</p>
+	  </button></a>
+	</td>
+    <td width="20%">
+	<a href="./article.html">
+	  <button class="BUTTONONWHITEVERTICALBORDER" style="width:100%"><p>
+
+	<table width="100%%" border="0" cellspacing="5" cellpadding="5">
+      <tr>
+        <td><div align="center"><img src="https://static.wixstatic.com/media/b714c2_5735e38f1d1e4b228787cdfdf486b288~mv2.png/v1/fill/w_412,h_365,fp_0.50_0.50,q_90,enc_auto/b714c2_5735e38f1d1e4b228787cdfdf486b288~mv2.webp" alt="Monkey Web Coding Challenge" width="100%" class="imgart"></div></td>
+      </tr>
+      <tr>
+        <td><h3 class="style5">Monkey Web Coding Challenge #3</h3>
+          <span class="style5"><br>
+          <em>by Banano Fam</em></span></td>
+      </tr>
+    </table>
+	
+	<p>&nbsp;</p>
+	  </button></a></td>
+  </tr>
+</table>
+
+<p class="GREEN">
+<table width="100%" border="0" align="center" cellpadding="5" cellspacing="5" bgcolor="#4CBF4A">
+  <tr>
+    <td width="20%" rowspan="3"><table width="100%%" border="0" cellpadding="5" cellspacing="5" class="style4">
+      <tr>
+        <td class="style4">
+				<button class="bfadsokg"><p id = "rotator7_div" class="bfadsokg"></p></button> </td>
+        <td width="40%">&nbsp;</td>
+      </tr>
+    </table></td>
+    <td colspan="2" rowspan="3" valign="top">
+	<a href="./article.html">
+		<button class="BUTTONONGREENVERTICALBORDER"><p>        
+		<p>
+        <table width="100%%" border="0" cellspacing="5" cellpadding="5">
+      <tr>
+        <td><img src="https://static.wixstatic.com/media/1aa9b8_a85e4bcc4b424ee3b557c44254862778~mv2.png/v1/fill/w_740,h_491,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/1aa9b8_a85e4bcc4b424ee3b557c44254862778~mv2.png" alt="Emmys 2022" width="100%" class="imgart"></td>
+        </tr>
+      <tr>
+        <td><h1 class="style4BIG">Emmys 2022 </h1>
+          <span class="style4BIG"><br>
+          <em>by Banano Fam </em></span></td>
+        </tr>
+    </table>
+	</button></a>
+	
+	</td>
+    <td width="20%" valign="top">
+	<a href="./article.html">
+	<button class="BUTTONONGREENHORIZONTALBORDER"><p>    
+	<p>
+    <table width="100%%" border="0" cellspacing="5" cellpadding="5">
+      <tr>
+        <td width="60%"><img src="https://static.wixstatic.com/media/299fa9_6352b91c38df437c87ad4ef3cc1415db~mv2.png/v1/fill/w_740,h_417,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/299fa9_6352b91c38df437c87ad4ef3cc1415db~mv2.png" alt="Sunday Community Call" width="100%" class="imgart"></td>
+        <td><h3 class="style4">Sunday Community Call 1</h3>
+          <span class="style4"><br>
+            <em>by Banano Fam </em></span></td>
+      </tr>
+    </table>
+	</button></a>
+	</td>
+    <td width="20%" rowspan="3">
+	
+	<table width="100%%" border="0" cellpadding="5" cellspacing="5" class="style4">
+      <tr>
+        <td width="40%" class="style4"><p class="style5">&nbsp;</p></td>
+        <td>
+				<button class="bfadsokg"><p id = "rotator8_div" class="bfadsokg"></p></button> </td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+  <tr>
+    <td width="20%">
+	<a href="./article.html">
+	<button class="BUTTONONGREENHORIZONTALBORDER"><p>
+	<table width="100%%" border="0" cellspacing="5" cellpadding="5">
+      <tr>
+        <td width="60%"><img src="https://static.wixstatic.com/media/299fa9_6352b91c38df437c87ad4ef3cc1415db~mv2.png/v1/fill/w_740,h_417,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/299fa9_6352b91c38df437c87ad4ef3cc1415db~mv2.png" alt="Sunday Community Call" width="100%" class="imgart"></td>
+        <td><h3 class="style4">Sunday Community Call 2</h3>
+          <span class="style4"><br>
+            <em>by Banano Fam </em></span></td>
+      </tr>
+    </table>
+	</button></a>
+	</td>
+  </tr>
+  <tr>
+    <td width="20%">
+	<a href="./article.html">
+	<button class="BUTTONONGREENHORIZONTALBORDER"><p>
+	<table width="100%%" border="0" cellspacing="5" cellpadding="5">
+      <tr>
+        <td width="60%"><img src="https://static.wixstatic.com/media/299fa9_6352b91c38df437c87ad4ef3cc1415db~mv2.png/v1/fill/w_740,h_417,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/299fa9_6352b91c38df437c87ad4ef3cc1415db~mv2.png" alt="Sunday Community Call" width="100%" class="imgart"></td>
+        <td><h3 class="style4">Sunday Community Call 3</h3>
+          <span class="style4"><br>
+            <em>by Banano Fam </em></span></td>
+      </tr>
+    </table>
+	</button></a>
+	</td>
+  </tr>
+</table>
+
+<p class="WHITE">
+<table width="100%" border="0" align="center" cellpadding="5" cellspacing="5" bgcolor="#FFFFFF">
+  <tr>
+    <td width="20%" rowspan="3"><table width="100%%" border="0" cellpadding="5" cellspacing="5" class="style5">
+      <tr>
+        <td class="style4">
+								<button class="bfadsokw"><p id = "rotator9_div" class="bfadsokw"></p></button> </td>
+</td>
+        <td width="40%">&nbsp;</td>
+      </tr>
+    </table></td>
+    <td colspan="3"><div style="width:100%" align="center">
+	<a href="./article.html">
+		<button class="BUTTONONWHITEHORIZONTALBORDER" style="width:100%"><p>
+
+	<table width="100%%" border="0" cellspacing="5" cellpadding="5">
+  <tr>
+    <td width="100%"><img class="imgart" src="https://static.wixstatic.com/media/0d5298_b11f96926a754e7b8806c82fd63687b3~mv2.jpg" alt="Banano Hackathon Competition aka BOOSTER 2 " width="100%"></td>
+  </tr>
+  <tr>
+    <td width="100%"><h1 class="style5BIG">Horror stories on cryptomonKeys {Event}</h1>
+      <p class="style5BIG"><br>
+    <em>by Banano Fam </em></p></td>
+  </tr>
+</table>
+
+</button></a>
+</div></td>
+    <td width="20%" rowspan="3"><table width="100%%" border="0" cellpadding="5" cellspacing="5" class="style5">
+      <tr>
+        <td width="40%" class="style4"><p class="style5">&nbsp;</p></td>
+        <td>
+								<button class="bfadsokw"><p id = "rotator10_div" class="bfadsokw"></p></button> </td>
+</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    
+
+    
+  </tr>
+  <tr>
+    <td width="20%">
+	<a href="./article.html">
 			<button class="BUTTONONWHITEVERTICALBORDER" style="width:100%"><p>
 
 	<table width="100%%" border="0" cellspacing="5" cellpadding="5">
       <tr>
-        <td><div align="center"><img src="https://static.wixstatic.com/media/b714c2_5735e38f1d1e4b228787cdfdf486b288~mv2.png/v1/fill/w_412,h_365,fp_0.50_0.50,q_90,enc_auto/b714c2_5735e38f1d1e4b228787cdfdf486b288~mv2.webp" alt="Monkey Web Coding Challenge" width="100%"></div></td>
+        <td><div align="center"><img src="https://static.wixstatic.com/media/b714c2_5735e38f1d1e4b228787cdfdf486b288~mv2.png/v1/fill/w_412,h_365,fp_0.50_0.50,q_90,enc_auto/b714c2_5735e38f1d1e4b228787cdfdf486b288~mv2.webp" alt="Monkey Web Coding Challenge" width="100%" class="imgart"></div></td>
       </tr>
       <tr>
         <td><h3 class="style5">Monkey Web Coding Challenge #1</h3>
@@ -629,15 +833,14 @@ border-radius: 0.1vw;
           <em>by Banano Fam</em></span></td>
       </tr>
     </table></button></a>
-	</td>
+	        <p>&nbsp;</p></td>
     <td width="20%">
-		<a href="./article.html">
-
+	<a href="./article.html">
 			<button class="BUTTONONWHITEVERTICALBORDER" style="width:100%"><p>
 
 	<table width="100%%" border="0" cellspacing="5" cellpadding="5">
       <tr>
-        <td><div align="center"><img src="https://static.wixstatic.com/media/b714c2_5735e38f1d1e4b228787cdfdf486b288~mv2.png/v1/fill/w_412,h_365,fp_0.50_0.50,q_90,enc_auto/b714c2_5735e38f1d1e4b228787cdfdf486b288~mv2.webp" alt="Monkey Web Coding Challenge" width="100%"></div></td>
+        <td><div align="center"><img src="https://static.wixstatic.com/media/b714c2_5735e38f1d1e4b228787cdfdf486b288~mv2.png/v1/fill/w_412,h_365,fp_0.50_0.50,q_90,enc_auto/b714c2_5735e38f1d1e4b228787cdfdf486b288~mv2.webp" alt="Monkey Web Coding Challenge" width="100%" class="imgart"></div></td>
       </tr>
       <tr>
         <td><h3 class="style5">Monkey Web Coding Challenge #2</h3>
@@ -647,15 +850,14 @@ border-radius: 0.1vw;
     </table>
 	
 	</button></a>
-	</td>
+	        <p>&nbsp;</p></td>
     <td width="20%">
-		<a href="./article.html">
-
+	<a href="./article.html">
 			<button class="BUTTONONWHITEVERTICALBORDER" style="width:100%"><p>
 
 	<table width="100%%" border="0" cellspacing="5" cellpadding="5">
       <tr>
-        <td><div align="center"><img src="https://static.wixstatic.com/media/b714c2_5735e38f1d1e4b228787cdfdf486b288~mv2.png/v1/fill/w_412,h_365,fp_0.50_0.50,q_90,enc_auto/b714c2_5735e38f1d1e4b228787cdfdf486b288~mv2.webp" alt="Monkey Web Coding Challenge" width="100%"></div></td>
+        <td><div align="center"><img src="https://static.wixstatic.com/media/b714c2_5735e38f1d1e4b228787cdfdf486b288~mv2.png/v1/fill/w_412,h_365,fp_0.50_0.50,q_90,enc_auto/b714c2_5735e38f1d1e4b228787cdfdf486b288~mv2.webp" alt="Monkey Web Coding Challenge" width="100%" class="imgart"></div></td>
       </tr>
       <tr>
         <td><h3 class="style5">Monkey Web Coding Challenge #3</h3>
@@ -664,7 +866,8 @@ border-radius: 0.1vw;
       </tr>
     </table>
 	
-	</button></a></td>
+	</button></a>
+	<p>&nbsp;</p></td>
   </tr>
 </table>
 
@@ -677,9 +880,9 @@ border-radius: 0.1vw;
 <table width="60%%" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td width="20%"><div align="center"><a href="./index.html"><img src="img/theban.jpg" alt="The Ban" width="75%" border="0"></a></div></td>
-    <td><div align="center" class="style6"><a href="./news.html"><button class="TOPBARLINK">NEWS</button></a></div></td>
+    <td><div align="center" class="style6"><button class="TOPBARLINK">NEWS</button></div></td>
     <td><div align="center" class="style6"><a href="./insights.html"><button class="TOPBARLINK">INSIGHTS</button></div></td>
-    <td><div align="center" class="style6"><a href="./events.html"><button class="TOPBARLINK">EVENTS</button></div></td>
+    <td><div align="center" class="style6"><a href="./events.html"><button class="TOPBARLINKselect">EVENTS</button></div></td>
     <td><div align="center" class="style6"><a href="./curiosities.html"><button class="TOPBARLINK">CURIOSITIES</button></div></td>
     <td><div align="center" class="style6"><a href="./lifestyle.html"><button class="TOPBARLINK">LIFESTYLE</button></div></td>
   </tr>
@@ -903,6 +1106,156 @@ border-radius: 0.1vw;
 		window.setTimeout(rotator4cycle,44000);
 	}
 	rotator4cycle();
+// -->
+</script>
+
+<script> 
+	var rotator7imgs = new Array("imgtemp/blb.png", "imgtemp/gbmb.png", "imgtemp/blb.png", "imgtemp/blb.png", "imgtemp/gbmb.png");
+	var rotator7lnks = new Array("https://sp642.pages.dev.cc", "https://prussia.dev/docs/gobanme/index.html", "https://sp642.pages.dev.cc", "https://sp642.pages.dev.cc", "https://prussia.dev/docs/gobanme/index.html");
+	var rotator7alt = new Array("BananoList", "GoBanMe", "BananoList", "BananoList", "GoBanMe");
+	var rotatorHtml = "";
+	var endJs = "";
+
+	for(var img in rotator7imgs){
+		var thisImg = new Image();
+		thisImg.src = rotator7imgs[img];
+	}
+	var rotator7imgCt = 5;
+	var rotator7currentAd = 0;
+	var target = "";
+	var rotator7banner = document.getElementById('rotator7');
+	var rotator7link = document.getElementById('rotator7adLink');
+	
+	function rotator7cycle() {
+		var rotatorHtml = "";
+		var endJs = "";
+		if (rotator7currentAd == rotator7imgCt) {
+			rotator7currentAd = 0;
+		}
+
+			if(rotator7lnks[rotator7currentAd] != ""){
+		rotatorHtml += '<a href="' + rotator7lnks[rotator7currentAd] + '" id="rotator7adLink"  target="_blank">';
+		endJs = "</a>";
+	}
+	rotatorHtml += '<img src="' + rotator7imgs[rotator7currentAd] + '" alt = "' + rotator7alt[rotator7currentAd] + '" id="rotator7">' + endJs;
+	document.getElementById("rotator7_div").innerHTML = rotatorHtml;	
+		rotator7currentAd++;
+		window.setTimeout(rotator7cycle,44000);
+	}
+	rotator7cycle();
+// -->
+</script>
+
+<script> 
+	var rotator8imgs = new Array("imgtemp/gbmb.png", "imgtemp/blb.png", "imgtemp/gbmb.png", "imgtemp/blb.png", "imgtemp/blb.png");
+	var rotator8lnks = new Array("https://prussia.dev/docs/gobanme/index.html", "https://sp642.pages.dev.cc", "https://prussia.dev/docs/gobanme/index.html", "https://sp642.pages.dev.cc", "https://sp642.pages.dev.cc");
+	var rotator8alt = new Array("GoBanMe", "BananoList", "GoBanMe", "BananoList", "BananoList");
+	var rotatorHtml = "";
+	var endJs = "";
+
+	for(var img in rotator8imgs){
+		var thisImg = new Image();
+		thisImg.src = rotator8imgs[img];
+	}
+	var rotator8imgCt = 5;
+	var rotator8currentAd = 0;
+	var target = "";
+	var rotator8banner = document.getElementById('rotator8');
+	var rotator8link = document.getElementById('rotator8adLink');
+	
+	function rotator8cycle() {
+		var rotatorHtml = "";
+		var endJs = "";
+		if (rotator8currentAd == rotator8imgCt) {
+			rotator8currentAd = 0;
+		}
+
+			if(rotator8lnks[rotator8currentAd] != ""){
+		rotatorHtml += '<a href="' + rotator8lnks[rotator8currentAd] + '" id="rotator8adLink"  target="_blank">';
+		endJs = "</a>";
+	}
+	rotatorHtml += '<img src="' + rotator8imgs[rotator8currentAd] + '" alt = "' + rotator8alt[rotator8currentAd] + '" id="rotator8">' + endJs;
+	document.getElementById("rotator8_div").innerHTML = rotatorHtml;	
+		rotator8currentAd++;
+		window.setTimeout(rotator8cycle,44000);
+	}
+	rotator8cycle();
+// -->
+</script>
+
+
+<script> 
+	var rotator9imgs = new Array("imgtemp/gbmb.png", "imgtemp/blb.png", "imgtemp/gbmb.png", "imgtemp/blb.png", "imgtemp/blb.png");
+	var rotator9lnks = new Array("https://prussia.dev/docs/gobanme/index.html", "https://sp642.pages.dev.cc", "https://prussia.dev/docs/gobanme/index.html", "https://sp642.pages.dev.cc", "https://sp642.pages.dev.cc");
+	var rotator9alt = new Array("GoBanMe", "BananoList", "GoBanMe", "BananoList", "BananoList");
+	var rotatorHtml = "";
+	var endJs = "";
+
+	for(var img in rotator9imgs){
+		var thisImg = new Image();
+		thisImg.src = rotator9imgs[img];
+	}
+	var rotator9imgCt = 5;
+	var rotator9currentAd = 0;
+	var target = "";
+	var rotator9banner = document.getElementById('rotator9');
+	var rotator9link = document.getElementById('rotator9adLink');
+	
+	function rotator9cycle() {
+		var rotatorHtml = "";
+		var endJs = "";
+		if (rotator9currentAd == rotator9imgCt) {
+			rotator9currentAd = 0;
+		}
+
+			if(rotator9lnks[rotator8currentAd] != ""){
+		rotatorHtml += '<a href="' + rotator9lnks[rotator9currentAd] + '" id="rotator9adLink"  target="_blank">';
+		endJs = "</a>";
+	}
+	rotatorHtml += '<img src="' + rotator9imgs[rotator9currentAd] + '" alt = "' + rotator9alt[rotator9currentAd] + '" id="rotator9">' + endJs;
+	document.getElementById("rotator9_div").innerHTML = rotatorHtml;	
+		rotator9currentAd++;
+		window.setTimeout(rotator9cycle,44000);
+	}
+	rotator9cycle();
+// -->
+</script>
+
+
+<script> 
+	var rotator10imgs = new Array("imgtemp/blb.png", "imgtemp/gbmb.png", "imgtemp/blb.png", "imgtemp/blb.png", "imgtemp/gbmb.png");
+	var rotator10lnks = new Array("https://sp642.pages.dev.cc", "https://prussia.dev/docs/gobanme/index.html", "https://sp642.pages.dev.cc", "https://sp642.pages.dev.cc", "https://prussia.dev/docs/gobanme/index.html");
+	var rotator10alt = new Array("BananoList", "GoBanMe", "BananoList", "BananoList", "GoBanMe");
+	var rotatorHtml = "";
+	var endJs = "";
+
+	for(var img in rotator10imgs){
+		var thisImg = new Image();
+		thisImg.src = rotator10imgs[img];
+	}
+	var rotator10imgCt = 5;
+	var rotator10currentAd = 0;
+	var target = "";
+	var rotator10banner = document.getElementById('rotator10');
+	var rotator10link = document.getElementById('rotator10adLink');
+	
+	function rotator10cycle() {
+		var rotatorHtml = "";
+		var endJs = "";
+		if (rotator10currentAd == rotator10imgCt) {
+			rotator10currentAd = 0;
+		}
+
+			if(rotator10lnks[rotator10currentAd] != ""){
+		rotatorHtml += '<a href="' + rotator10lnks[rotator10currentAd] + '" id="rotator10adLink"  target="_blank">';
+		endJs = "</a>";
+	}
+	rotatorHtml += '<img src="' + rotator10imgs[rotator10currentAd] + '" alt = "' + rotator10alt[rotator10currentAd] + '" id="rotator10">' + endJs;
+	document.getElementById("rotator10_div").innerHTML = rotatorHtml;	
+		rotator10currentAd++;
+		window.setTimeout(rotator10cycle,44000);
+	}
+	rotator10cycle();
 // -->
 </script>
 </body>
