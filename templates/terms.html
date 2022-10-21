@@ -305,6 +305,30 @@ body {
 
       }
 
+.bfadsokg {
+  font-family: Corbel;
+	font-size: 1vw;
+  font-weight: bold;
+	color: #FFFFFF;
+  background-color: rgba(0,0,0,0.00);
+  border-color: rgba(0,0,0,0.00);
+  border-width: 0.1vw;
+  width: auto;
+  height: auto;
+  vertical-align:middle;
+  align: center;
+  border-radius: 0.2vw/0.2vw;
+}
+
+.bfadsokg:hover {
+  border-width: 0.1vw;
+        color: #ffffff;
+        border-color: #FFFFFF;
+  background-color: rgba(0,0,0,0.00);
+
+        text-shadow: 0px 0px 0.3vw #4CBF4A;
+      }
+
 
 .imgart {
 border:groove #4CBF4A;
@@ -378,25 +402,8 @@ border-radius: 0.1vw;
     <td width="20%"><table width="100%%" border="0" cellpadding="5" cellspacing="5" class="style4">
       <tr>
         <td class="style4">
-		<button class="BANADGREEN">
-		<p align="center" class="style4">|</p>
-          <p align="center" class="style4">|</p>
-          <p align="center" class="style4">|</p>
-          <p align="center" class="style4">|</p>
-          <p align="center" class="style4">|</p>
-          <p align="center" class="style4">|</p>
-          <p align="center" class="style4">|</p>
-          <p align="center" class="style4">|</p>
-          <p align="center" class="style4">(Banano-Ad)</p>
-          <p align="center" class="style4">|</p>
-          <p align="center" class="style4">|</p>
-          <p align="center" class="style4">|</p>
-          <p align="center" class="style4">|</p>
-          <p align="center" class="style4">|</p>
-          <p align="center" class="style4">|</p>
-          <p align="center" class="style4">|</p>
-          <p align="center" class="style4">|</p>
-		  </button>          </td>
+		<button class="bfadsokg"><p id = "rotator1_div" class="bfadsokg"></p></button>        
+          </td>
         <td width="40%">&nbsp;</td>
       </tr>
     </table></td>
@@ -453,22 +460,13 @@ border-radius: 0.1vw;
     <br>
     <strong>Third party websites</strong>: The Ban has no control or liability for third party websites.<br>
     <br>
-    <strong>Variation</strong>: XXXCONTINUEXXXdocument may be revised; variation of website document: unregistered users; variation of website document: registered users.<br>
+    <strong>Variation</strong>: Articles may be revised
     <br>
-    <strong>Assignment</strong>: assignment by first party; assignment by second party.<br>
     <br>
-    <strong>Severability</strong>: severability of whole; severability of parts.<br>
+    <strong>Entire agreement</strong>: Using The Ban you accept terms.
     <br>
-    <strong>Third party rights</strong>: third party rights: benefit; third party rights: exercise of rights.<br>
     <br>
-    <strong>Entire agreement</strong>: entire agreement - use of website.<br>
-    <br>
-    <strong>Law and jurisdiction</strong>: governing law; jurisdiction.<br>
-    <br>
-    <strong>Statutory and regulatory disclosures</strong>: ecommerce regulations: trade register; ecommerce regulations: authorisation scheme; ecommerce 
-    regulations: professionals; ecommerce regulations: code of conduct; value added tax number.<br>
-    <br>
-    <strong>Our details</strong>: website operator name; company registration details; place of business; contact information.<br>
+    <strong>Our details</strong>: This is a small editorial project between friends<br>
               </p>            </td>
             </tr>
           <tr>
@@ -489,25 +487,7 @@ border-radius: 0.1vw;
       <tr>
         <td width="40%" class="style4"><p class="style5">&nbsp;</p></td>
         <td>
-				<button class="BANADGREEN">
-		<p align="center" class="style4">|</p>
-          <p align="center" class="style4">|</p>
-	      <p align="center" class="style4">|</p>
-	      <p align="center" class="style4">|</p>
-		  		  <p align="center" class="style4">|</p>
-	      <p align="center" class="style4">|</p>
-          <p align="center" class="style4">|</p>
-          <p align="center" class="style4">|</p>
-          <p align="center" class="style4">(Banano-Ad)</p>
-          <p align="center" class="style4">|</p>
-		  		  <p align="center" class="style4">|</p>
-	      <p align="center" class="style4">|</p>
-          <p align="center" class="style4">|</p>
-		  <p align="center" class="style4">|</p>
-	      <p align="center" class="style4">|</p>
-          <p align="center" class="style4">|</p>
-          <p align="center" class="style4">|</p>
-		  </button></td>
+				<button class="bfadsokg"><p id = "rotator2_div" class="bfadsokg"></p></button> </td>
       </tr>
     </table></td>
   </tr>
@@ -605,6 +585,81 @@ border-radius: 0.1vw;
     <td valign="middle" class="style4"><div align="center" class="style4"><img src="img/sponsor.png" width="80%" height="auto"></div></td>
   </tr>
 </table>
+
+<script> 
+	var rotator1imgs = new Array("imgtemp/blb.png", "imgtemp/gbmb.png", "imgtemp/blb.png", "imgtemp/gbmb.png", "imgtemp/blb.png");
+	var rotator1lnks = new Array("https://sp642.pages.dev.cc", "https://prussia.dev/docs/gobanme/index.html", "https://sp642.pages.dev.cc", "https://prussia.dev/docs/gobanme/index.html", "https://sp642.pages.dev.cc");
+	var rotator1alt = new Array("BananoList", "GoBanMe", "BananoList", "GoBanMe", "BananoList");
+	var rotatorHtml = "";
+	var endJs = "";
+
+	for(var img in rotator1imgs){
+		var thisImg = new Image();
+		thisImg.src = rotator1imgs[img];
+	}
+	var rotator1imgCt = 5;
+	var rotator1currentAd = 0;
+	var target = "";
+	var rotator1banner = document.getElementById('rotator1');
+	var rotator1link = document.getElementById('rotator1adLink');
+	
+	function rotator1cycle() {
+		var rotatorHtml = "";
+		var endJs = "";
+		if (rotator1currentAd == rotator1imgCt) {
+			rotator1currentAd = 0;
+		}
+
+			if(rotator1lnks[rotator1currentAd] != ""){
+		rotatorHtml += '<a href="' + rotator1lnks[rotator1currentAd] + '" id="rotator1adLink"  target="_blank">';
+		endJs = "</a>";
+	}
+	rotatorHtml += '<img src="' + rotator1imgs[rotator1currentAd] + '" alt = "' + rotator1alt[rotator1currentAd] + '" id="rotator1">' + endJs;
+	document.getElementById("rotator1_div").innerHTML = rotatorHtml;	
+		rotator1currentAd++;
+		window.setTimeout(rotator1cycle,22000);
+	}
+	rotator1cycle();
+// -->
+</script>
+
+<script> 
+	var rotator2imgs = new Array("imgtemp/gbmb.png", "imgtemp/blb.png", "imgtemp/gbmb.png", "imgtemp/blb.png", "imgtemp/blb.png");
+	var rotator2lnks = new Array("https://prussia.dev/docs/gobanme/index.html", "https://sp642.pages.dev.cc", "https://prussia.dev/docs/gobanme/index.html", "https://sp642.pages.dev.cc", "https://sp642.pages.dev.cc");
+	var rotator2alt = new Array("GoBanMe", "BananoList", "GoBanMe", "BananoList", "BananoList");
+	var rotatorHtml = "";
+	var endJs = "";
+
+	for(var img in rotator2imgs){
+		var thisImg = new Image();
+		thisImg.src = rotator2imgs[img];
+	}
+	var rotator2imgCt = 5;
+	var rotator2currentAd = 0;
+	var target = "";
+	var rotator2banner = document.getElementById('rotator2');
+	var rotator2link = document.getElementById('rotator2adLink');
+	
+	function rotator2cycle() {
+		var rotatorHtml = "";
+		var endJs = "";
+		if (rotator2currentAd == rotator2imgCt) {
+			rotator2currentAd = 0;
+		}
+
+			if(rotator2lnks[rotator2currentAd] != ""){
+		rotatorHtml += '<a href="' + rotator2lnks[rotator2currentAd] + '" id="rotator2adLink"  target="_blank">';
+		endJs = "</a>";
+	}
+	rotatorHtml += '<img src="' + rotator2imgs[rotator2currentAd] + '" alt = "' + rotator2alt[rotator1currentAd] + '" id="rotator2">' + endJs;
+	document.getElementById("rotator2_div").innerHTML = rotatorHtml;	
+		rotator2currentAd++;
+		window.setTimeout(rotator2cycle,22000);
+	}
+	rotator2cycle();
+// -->
+</script>
+
 
 </body>
 </html>
